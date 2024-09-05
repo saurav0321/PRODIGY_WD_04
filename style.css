@@ -1,0 +1,386 @@
+/* variables */
+:root {
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(/images/bg-img.jpg) ;
+    width: 100%;
+    height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    background: #299f8c;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+    background: #5b5858;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #605050;
+}
+
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px;
+    overflow: hidden;
+    background-color: #373030;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 4px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#menu li {
+    margin: 0 22px;
+    font-size: 30px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #8f5b5b;
+}
+
+#menu li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.closebtn, .openbtn {
+    display: none;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+/* introduction css */
+.site-header {
+    color: #299f8c;
+    height: 100vh;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    box-shadow: #014638 2px 5px 5px;
+}
+
+.site-header-content {
+    margin: 10px;
+}
+
+.site-header-content h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.site-header-content h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#more_about_me {
+    font-size: 25px;
+    font-family: monospace;
+    background-color: #014638;
+    border: 1px solid #014638;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+
+/* about me css */
+#about_me {
+    background-color: #014638;
+    background-attachment: fixed;
+}
+
+#about_me h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#about_me p {
+    font-family: monospace;
+    padding: 0 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 35px;
+}
+
+
+/* education css */
+#education {
+    background-attachment: fixed;
+}
+
+#education h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#education div {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#education div div {
+    width: 300px;
+    height: 250px;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 0 15px;
+    padding: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#education div div:hover {
+    background-color: #068a70;
+    color: #fff;
+}
+
+#education div div h3 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#education div div p {
+    font-size: 20px;
+}
+
+
+/* skills css */
+#skills {
+    background-color: #014638;
+    background-attachment: fixed;
+    height: 650px;
+}
+
+#skill {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills > .left {
+    float: left;
+    width: 55%;
+    padding: 40px 55px;
+    color: #fff;
+    font-family: monospace;
+    font-size: large;
+}
+
+#skills > .left p {
+    line-height: 25px;
+}
+
+#skills > .left > p a {
+    text-decoration: none;
+    color: orange;
+    background-color: #873d3d;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+#skills > .left > p a:hover {
+    background-color: #893636;
+    color: orangered;
+}
+
+#skills > .right {
+    float: right;
+    width: 45%;
+    padding: 40px 60px;
+}
+
+#skills > .right > ul {
+    list-style: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+
+/* projects css */
+#projects {
+    margin-top: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    background-attachment: fixed;
+}
+
+#projects > h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#projects .size {
+    height: 250px;
+    width: 425px;
+    margin: 15px;
+}
+
+
+/* achievements css */
+#achievements {
+    background-color: #2f1d1d;
+    background-attachment: fixed;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+#achievement {
+    font-size: 40px;
+    color: #8a4646;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#achievements > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#achievements > div div {
+    background-color: #5b5858;
+    margin: 0 20px;
+    padding: 0 15px;
+    border-radius: 25px;
+    text-align: center;
+    width: 25%;
+    height: fit-content;
+    cursor: pointer;
+}
+
+#achievements > div div:hover {
+    background-color: #299f8c;
+}
+
+#achievements > div div h1 {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+#achievements > div div p {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+
+/* contact css */
+#contact > h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.height-width{
+    width: 150px;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.height-width h1 a{
+    text-decoration: none;
+    color: #5b5858;
+}
+
+.height-width h1 a:hover{
+    text-decoration: underline;
+    color: #945050;
+}
+
+hr {
+    height: 5px;
+    background-color: #014638;
+}
+
+
+/* footer */
+.footer > p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
